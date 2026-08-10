@@ -1,0 +1,174 @@
+{
+  "args": {
+    "alpha": 0.1,
+    "bootstrap_samples": 1000,
+    "bootstrap_seed": 0,
+    "csv": null,
+    "dataset_name": null,
+    "datasets": [
+      "uci_default",
+      "bank_marketing",
+      "adult",
+      "aps_failure",
+      "diabetes130us",
+      "miniboone",
+      "fraud",
+      "mammography",
+      "sick_numeric",
+      "wilt",
+      "ozone_level_8hr",
+      "seismic_bumps",
+      "pc1",
+      "oil_spill",
+      "credit_g"
+    ],
+    "defer_cost": 0.0,
+    "defer_costs": [
+      0.0,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "fn_cost": 10.0,
+    "fp_cost": 1.0,
+    "frontier_alpha_max": 0.45,
+    "frontier_alpha_min": 0.01,
+    "frontier_steps": 23,
+    "jobs": 1,
+    "model": "hgb",
+    "models": [
+      "hgb",
+      "logreg",
+      "rf",
+      "et",
+      "gb",
+      "ada",
+      "gnb"
+    ],
+    "output_dir": "results_v4",
+    "positive_label": "1",
+    "probability_calibration": "none",
+    "probability_calibrations": [
+      "none",
+      "sigmoid",
+      "isotonic"
+    ],
+    "raps_penalty": 0.1,
+    "resume": true,
+    "review_capacity": 0.1,
+    "seeds": [
+      7,
+      19,
+      31,
+      42,
+      101,
+      202,
+      303,
+      404,
+      505,
+      606
+    ],
+    "target": null
+  },
+  "created_at_utc": "2026-08-06T01:55:43.050858+00:00",
+  "datasets": [
+    {
+      "n_features": 23,
+      "n_samples": 30000,
+      "name": "uci_default",
+      "positive_rate": 0.2212
+    },
+    {
+      "n_features": 16,
+      "n_samples": 45211,
+      "name": "bank_marketing",
+      "positive_rate": 0.11698480458295547
+    },
+    {
+      "n_features": 14,
+      "n_samples": 48842,
+      "name": "adult",
+      "positive_rate": 0.23928176569346055
+    },
+    {
+      "n_features": 170,
+      "n_samples": 76000,
+      "name": "aps_failure",
+      "positive_rate": 0.018092105263157895
+    },
+    {
+      "n_features": 49,
+      "n_samples": 101766,
+      "name": "diabetes130us",
+      "positive_rate": 0.11159915885462728
+    },
+    {
+      "n_features": 50,
+      "n_samples": 130064,
+      "name": "miniboone",
+      "positive_rate": 0.28062338541025955
+    },
+    {
+      "n_features": 29,
+      "n_samples": 284807,
+      "name": "fraud",
+      "positive_rate": 0.001727485630620034
+    },
+    {
+      "n_features": 6,
+      "n_samples": 11183,
+      "name": "mammography",
+      "positive_rate": 0.023249575248144506
+    },
+    {
+      "n_features": 29,
+      "n_samples": 3772,
+      "name": "sick_numeric",
+      "positive_rate": 0.0612407211028632
+    },
+    {
+      "n_features": 5,
+      "n_samples": 4839,
+      "name": "wilt",
+      "positive_rate": 0.05393676379417235
+    },
+    {
+      "n_features": 72,
+      "n_samples": 2534,
+      "name": "ozone_level_8hr",
+      "positive_rate": 0.06314127861089187
+    },
+    {
+      "n_features": 18,
+      "n_samples": 2584,
+      "name": "seismic_bumps",
+      "positive_rate": 0.06578947368421052
+    },
+    {
+      "n_features": 21,
+      "n_samples": 1109,
+      "name": "pc1",
+      "positive_rate": 0.06943192064923355
+    },
+    {
+      "n_features": 49,
+      "n_samples": 937,
+      "name": "oil_spill",
+      "positive_rate": 0.04375667022411953
+    },
+    {
+      "n_features": 20,
+      "n_samples": 1000,
+      "name": "credit_g",
+      "positive_rate": 0.3
+    }
+  ],
+  "git_commit": "067be83967286f51ff4da7b1f101feeb8fce9d69",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "python": "3.14.6",
+  "versions": {
+    "numpy": "2.5.1",
+    "pandas": "3.0.3",
+    "sklearn": "1.9.0"
+  }
+}
