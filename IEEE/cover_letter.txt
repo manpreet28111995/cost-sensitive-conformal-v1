@@ -1,0 +1,43 @@
+Date: August 10, 2026
+
+To:
+The Editor-in-Chief
+IEEE Open Journal of the Computer Society
+
+Subject: Submission of Manuscript "Cost-Sensitive Conformal Prediction and Human-in-the-Loop Abstention for Imbalanced High-Stakes Decision Support: A Multi-Domain Benchmark"
+
+Dear Editor-in-Chief and Editorial Board,
+
+We are pleased to submit our original research manuscript titled "Cost-Sensitive Conformal Prediction and Human-in-the-Loop Abstention for Imbalanced High-Stakes Decision Support: A Multi-Domain Benchmark" for publication in the IEEE Open Journal of the Computer Society.
+
+Manuscript Overview & Core Contributions:
+High-stakes decision support systems (such as credit scoring, fraud detection, healthcare, and industrial safety) demand distribution-free uncertainty quantification under severe class imbalance and asymmetric error costs. While standard marginal conformal prediction guarantees valid overall coverage, it systematically under-covers rare, costly positive classes (averaging only 30.77% minority coverage across 3,150 experimental fits in our multi-domain benchmark).
+
+In this work, we present a systematic multi-domain benchmark across 15 imbalanced tabular datasets, 7 classifiers, 3 probability calibrators, and 10 random seeds. Our main contributions include:
+1. Multi-Domain Benchmark & Coverage Restoration: We demonstrate that class-conditional (Mondrian) conformal prediction restores minority-class validity, achieving 92.12% mean minority coverage (+61.35 percentage-point gain over marginal CP).
+2. Selection-Split Calibration Protocol: We formalize a split-conformal protocol that decouples miscoverage selection from final quantile estimation while maintaining class-conditional validity guarantees.
+3. Capacity-Constrained Cost Modeling & Operational Boundaries: We model cost-sensitive human deferral under review overheads (C_rev) and human queue capacity limits (r_max = 10%), evaluate reviewer error rates, and derive closed-form empirical break-even thresholds (C_rev^*). This establishes explicit boundary conditions where human expert deferral is economically viable versus automated Bayes point classification.
+
+Author Details:
+- Manpreet Singh (Senior Member, IEEE), Boston University, Boston, MA, USA
+- Akshatha Srikantha, University of California, Irvine, Irvine, CA, USA
+- Deepak Parashar (Corresponding Author), Manipal Institute of Technology, Manipal Academy of Higher Education, Manipal, India. Email: deepak.parashar@manipal.edu
+- Rahul Joshi, Symbiosis Institute of Technology, Symbiosis International (Deemed University), Pune, India
+
+Declarations & Integrity Statement:
+- Originality & Single Submission: This manuscript is an original work that has not been published previously and is not under consideration for publication elsewhere.
+- Ethical Approval & Data/Code Availability: All 15 benchmark datasets are publicly accessible OpenML benchmarks. All source code, experiment scripts, and pre-processing pipelines are publicly available on GitHub at: https://github.com/manpreet28111995/cost-sensitive-conformal-v1
+- Conflict of Interest: The authors declare no competing financial or non-financial interests.
+- Funding: No external funding was received for this study.
+
+We believe our findings will be of strong interest to the readership of the IEEE Open Journal of the Computer Society, bridging distribution-free conformal prediction, cost-sensitive learning, and human-in-the-loop decision support systems.
+
+Thank you for considering our manuscript. We look forward to your feedback.
+
+Sincerely,
+
+Dr. Deepak Parashar (on behalf of all co-authors)
+Corresponding Author
+Department of Data Science and Computer Applications
+Manipal Institute of Technology, MAHE, Manipal 576104, India
+Email: deepak.parashar@manipal.edu

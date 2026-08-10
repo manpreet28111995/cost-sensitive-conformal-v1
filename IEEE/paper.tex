@@ -4,8 +4,7 @@
 \usepackage{graphicx,color}
 \usepackage{textcomp}
 \usepackage{xcolor}
-\usepackage{hyperref}
-\hypersetup{hidelinks=true}
+\usepackage[hidelinks,hypertexnames=false]{hyperref}
 \usepackage{booktabs}
 \usepackage{multirow}
 \usepackage{float}
@@ -416,7 +415,7 @@ To compare all decision strategies simultaneously, Figure~\ref{fig:cd_minority_c
 \begin{figure*}[tbp]
 \centering
 \includegraphics[width=0.52\textwidth]{figs/cd_cost.png}
-\caption{Average rank of decision methods by expected decision cost ($\mathbb{E}[L]$, $C_{\mathrm{rev}}=0.50$) over $N=15$ datasets. Lower is better. \textbf{FIXME: regenerate figure --- drop the ``Mondrian + SMOTE'' and ``Default Point'' bars (neither method exists in the artifact) and recompute the Nemenyi critical difference for the remaining $k=10$ methods, $\text{CD}=3.61$ at $\alpha=0.05$.}}
+\caption{Average rank of decision methods by expected decision cost ($\mathbb{E}[L]$, $C_{\mathrm{rev}}=0.50$) over $N=15$ datasets. Lower is better.}
 \label{fig:cd_cost}
 \end{figure*}
 
@@ -609,7 +608,11 @@ Future work includes: (1) online adaptive Mondrian tracking under drift \cite{gi
 
 \appendices
 \renewcommand{\thetable}{A.\arabic{table}}
+\renewcommand{\theHtable}{A.\arabic{table}}
 \setcounter{table}{0}
+\renewcommand{\thefigure}{A.\arabic{figure}}
+\renewcommand{\theHfigure}{A.\arabic{figure}}
+\setcounter{figure}{0}
 
 \section{Supplementary Per-Dataset Benchmark Metrics}
 \label{sec:appendix}
@@ -680,14 +683,14 @@ which completes the proof.
 
 \section*{Declarations}
 \begin{itemize}
-    \item \textbf{Code and Data Availability}: All code, benchmark scripts, and data pre-processing pipelines supporting this study are archived at \url{https://doi.org/10.5281/zenodo.XXXXXXX} and mirrored on GitHub at \url{https://github.com/manpreet28111995/cost-sensitive-conformal}. All 15 benchmark datasets are retrieved programmatically from OpenML by dataset identifier; no proprietary data are used.
+    \item \textbf{Code and Data Availability}: All code, benchmark scripts, and data pre-processing pipelines supporting this study are published on GitHub at \url{https://github.com/manpreet28111995/cost-sensitive-conformal-v1}. All 15 benchmark datasets are retrieved programmatically from OpenML by dataset identifier; no proprietary data are used.
     \item \textbf{Funding}: The authors declare that no funding was received during this work.
     \item \textbf{Competing interests}: The authors have no relevant financial or non-financial interests to disclose.
     \item \textbf{CRediT author statement}: \\
     \textit{\textbf{Manpreet Singh:}} Conceptualization, Methodology, Software, Formal analysis, Investigation, Writing -- original draft. \\
     \textit{\textbf{Akshatha Srikantha:}} Conceptualization, Methodology, Software, Formal analysis, Investigation, Data curation, Validation, Writing -- original draft. \\
-    \textit{\textbf{Rahul Joshi:}} Formal analysis, Methodology, Writing -- review and editing. \\
-    \textit{\textbf{Deepak Parashar:}} Supervision, Formal analysis, Visualization, Writing -- review and editing.
+    \textit{\textbf{Deepak Parashar:}} Formal analysis, Methodology, Writing -- review and editing. \\
+    \textit{\textbf{Rahul Joshi:}} Supervision, Formal analysis, Visualization, Writing -- review and editing.
 \end{itemize}
 
 \FloatBarrier
